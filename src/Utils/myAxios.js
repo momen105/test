@@ -6,10 +6,10 @@ import {
     setAccessToken,
 } from "./localStorages";
 
-export const baseURL =
-    process.env.NODE_ENV === "production"
-        ? "https://api.nexismenu.live"
-        : "https://api.nexismenu.live";
+export const baseURL ="http://127.0.0.1:8000/"
+//     process.env.NODE_ENV === "production"
+//         ? "https://api.nexismenu.live"
+//         : "https://api.nexismenu.live";
 
 const myAxios = axios.create({ baseURL, withCredentials: true });
 
